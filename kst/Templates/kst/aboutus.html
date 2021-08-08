@@ -1,0 +1,96 @@
+{% extends 'kst/base.html' %}
+
+{% block body %}
+{% load static %}
+  <section id="hero1" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Main -->
+
+	<div class="container">
+		<div class="col-md-12 mt-2 row" id="about_us">
+        <div class="col-md-6">
+        	 <h2 class=" text-primary"><b>ABOUT US_______</b></h2>
+        	 <p>We are a team of professional, energetic individuals with talented designers and developers to guide our client through flawless and timely execution of any project we work on. Since day one we have been delivering creative and unique websites, mobile applications and software projects. We offer flexible & reliable websites and applications. <br><br>
+        	 	We are the through-leaders in the domain of professional IT services in implementing world-class infrastructure and technology
+        	   </p>
+        </div>
+
+        <div class="col-md-6" >
+        	  <figure>
+        	  	 <img src="{%static '/assets/img/about.png'%}" class="img-fluid" alt="person talking on mobile pic">
+        	  </figure>
+        	</div>
+      </div>
+
+      <div class="col-md-12 mt-2 row" id="about_us">
+        <div class="col-md-6  shadow-lg p-1 bg-white" >
+        	  <figure>
+        	  	 <img src="{% static './assets/img/rushi_sir.png'%}" class="img-fluid" alt="our founder Pic">
+        	  </figure>
+        </div>
+        <div class="col-md-6">
+        	 <h2 class=" text-primary"><b>ABOUT OUR FOUNDER_______</b></h2>
+        	 <p>
+        	 	Rushikesh Shinde Founder and Chairperson  <br>
+        	 	In business a founder is an individual who forms and establishes a business the Founder is typically responsible for setting the mission and vision of a company essentially a founder takes a business from an idea to an entity. In our company our Founder is from village call Rahuri in Ahmednagar from that village where dreams. <br> <br>
+        	 	started to company where dream becoming true his journey started at age of 18 His name is Mr. Rushikesh Shinde he is just 18 years old and can code in 12 languages and can speak five languages He is an IT Engineer by profession now in first year of college and still manage to form a company called kodeo softwares it's not an easy task to handle academics and profession at this age where everyone enjoying their life he faced alot of struggle to form this company
+        	 	<br><br>
+        	 	He is good poet, horse rider, swimmer and athlete as well as a good cook he loves to click photos of nature even nature lover and many more...
+        	   </p>
+        </div>
+      </div>
+	</div>
+		<!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+		<div class="container">
+
+		  <div class="row counters">
+
+			<div class="col-lg-3 col-6 text-center">
+			  <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+			  <p>Happy Clients</p>
+			</div>
+
+			<div class="col-lg-3 col-6 text-center">
+			  <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+			  <p>Account Number</p>
+			</div>
+
+			<div class="col-lg-3 col-6 text-center">
+			  <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+			  <p>Finished Projects</p>
+			</div>
+
+			<div class="col-lg-3 col-6 text-center">
+			  <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+			  <p>Winning Project</p>
+			</div>
+
+		  </div>
+
+		</div>
+	  </section>
+	  <!-- End Counts Section -->
+
+
+	  <div class="container">
+		<div class="row">
+		  <div class="col">
+			<img src="{% static './assets/img/Images/What client say.png'%}" style="margin-top: -40px; margin-bottom: 40px;">
+		  </div>
+		  <div class="col mt-5">
+			<img src="{% static './assets/img/Images/Exmentri mark.png'%}" class="watermark">
+			<p class="graph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sapiente delectus consectetur dignissimos dolorum suscipit, distinctio hic? Repellat sequi voluptates facilis! Ratione ullam accusamus qui illum pariatur sint. Quae, maxime?</p>
+		  </div>
+		</div>
+	  </div>
+{% endblock %}

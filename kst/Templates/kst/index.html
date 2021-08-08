@@ -1,0 +1,148 @@
+{% extends 'kst/base.html' %}
+
+{% block body %}
+{% load static %}
+
+  <!-- ======= Main Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="{% static 'assets/img/Images/Slider-text.png'%}" class="img-fluid animated" alt="" style="margin-left: -400px;">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Main -->
+
+  <main id="main">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col mt-5">
+          <h2 class=" text-primary">Freely Communicate______</h2>
+          <p>Customer Support – improve<br>
+          customer satisfaction through better service.</p>
+        </div>
+        <div class="col">
+          <img src="{% static './assets/img/Images/Freely Communicate.png'%}" width="100%">
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 40px;">
+        <div class="col">
+          <img src="{% static './assets/img/Images/Gather Feedback.png'%}" width="100%">
+        </div>
+        <div class="col mt-5">
+          <h2 class=" text-primary">Gather Feedback______</h2>
+          <p>Long form-based surveys. The most common way of collecting customer<br>
+            feedback is survey forms with a set of questions that are usually sent in an email</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- =======  ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h3 style="color: white;">TECHNOLOGY</h3>
+          <h2>IMPROVE AND INNOVANTE THATS WITH THE KODEO</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+         <div class="col align-self-center shadow-lg p-3 bg-white mx-2 rounded-top rounded-bottom">
+              <figure>
+                <img src="{% static 'assets/img/Images/fi-xnsuxx-user-plus-solid.png'%}" class="rounded-circle img-fluid" width="50px" height="50px;" alt="logo">
+              </figure>
+           <h2>EXPLORE YOUR TEAM</h2>
+           <h5 style="padding-bottom: 28px;">Spend more time with team</h5>
+         </div>
+         <div class="col align-self-end shadow-lg p-3 bg-white mx-2 rounded-top rounded-bottom">
+              <figure>
+                <img src="{% static 'assets/img/Images/fi-xnsuxx-user-plus-solid.png'%}" class="rounded-circle img-fluid" width="50px" height="50px;" alt="logo">
+              </figure>
+           <h2>DISIGN TO APP</h2>
+           <H5 style="padding-bottom: 48px;">Design and prototype websites mobile apps ans more..</H5>
+         </div>
+         <div class="col align-self-center shadow-lg p-3 bg-white mx-2 rounded-top rounded-bottom">
+          <figure>
+            <img src="{% static 'assets/img/Images/fi-xnsuxx-user-plus-solid.png'%}" class="rounded-circle img-fluid" width="50px" height="50px;" alt="logo">
+          </figure>
+       <h2>DIGITAL WHITEBOARD</h2>
+       <H5 style="padding-bottom: 10px;">Trusted result for online Marketing business and online classes</H5>
+     </div>
+     <div class="col align-self-end shadow-lg p-3 bg-white mx-2 rounded-top rounded-bottom">
+          <figure>
+            <img src="{% static 'assets/img/Images/fi-xnsuxx-user-plus-solid.png'%}" class="rounded-circle img-fluid" width="50px" height="50px;" alt="logo">
+          </figure>
+       <h2>DESIGN TO DEVELOPMENT </h2>
+       <H5>Good project management often affects the success of the design and development project.</H5>
+     </div>
+       </div>
+               </div>
+
+      </div>
+    </section>
+    <!-- End  -->
+
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Happy Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Account Number</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Finished Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Winning Project</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Counts Section -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="{% static './assets/img/Images/What client say.png'%}" style="margin-top: -40px; margin-bottom: 40px;">
+        </div>
+        <div class="col mt-5">
+          <img src="{% static './assets/img/Images/Exmentri mark.png'%}" class="watermark">
+          <p class="graph">Long form-based surveys. The most common way of collecting customer feedback is survey forms with a set of questions that are usually sent in an email</p>
+        </div>
+      </div>
+    </div>
+
+
+  </main><!-- End #main -->
+
+{% endblock %}

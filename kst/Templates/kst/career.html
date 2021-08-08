@@ -1,0 +1,214 @@
+{% extends 'kst/base.html' %}
+
+{% block body %}
+{% load static %}
+
+<!-- ======= Main Section ======= -->
+  <section id="hero4" class="d-flex align-items-center">
+
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <h1 style="color: white;">Insert like that Join our team,<br> Explore a career,<br> We're looking for talent.</h1>
+      </div>
+    </div>
+
+  </section><!-- End Main -->
+    <style>
+          p, h4, a, li {
+  font-family: 'Open Sans',sans-serif!important;
+}
+.box {
+background: #f2f2f2;
+border-radius: 4px;
+padding: 1em 1em;
+margin: 2em 0!important;
+text-align: left;
+}
+
+
+h4, li {
+font-weight: 300;
+color: #07355C;
+display: inline-block;
+vertical-align: middle;
+}
+
+.button {
+font-size: 1em!important;
+padding: 5px 20px!important;
+text-decoration: none;
+-webkit-box-shadow: #e28b00 0 1px 0;
+-moz-box-shadow: #e28b00 0 1px 0;
+box-shadow: #e28b00 0 1px 0;
+background-color: #f6ae2b;
+background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#f6ae2b),color-stop(70%,#f39d13));
+background-image: -webkit-linear-gradient(#f6ae2b,#f39d13 70%);
+background-image: -moz-linear-gradient(#f6ae2b,#f39d13 70%);
+background-image: -o-linear-gradient(#f6ae2b,#f39d13 70%);
+background-image: linear-grad;
+padding-left: 0;
+padding-right: 0;
+text-align: center;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+padding: 10px 20px;
+font-size: 18px;
+border: none;
+color: white;
+display: inline-block;
+vertical-align: middle;
+margin-right:1em;
+}
+
+.box ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.function
+{
+  display: block;
+}
+
+.box-col
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.text-right
+{
+  text-align:right;
+}
+
+.box-80
+{
+  width: 79%;
+}
+
+.box-20
+{
+  width: 20%;
+}
+
+      </style>
+
+  <div class="container">
+    <h1 class="my-5"><b style="margin-left: 270px;">WHAT JOB DO YOU WANT TO POST?</b></h1>
+    <form action='' class='form'>
+      {% for i in opening %}
+        <div class="box">
+        <div class="box-col box-80">
+          <h4 class="text-primary"><b>{{ i.title }}</b></h4>
+          <span class="function">{{ i.decs }}</span>
+        </div>
+
+        <div class="box-col box-20 text-right">
+          <a class="button" href="/jobapplication">Apply</a>
+        </div>
+
+      </div>
+      {% endfor %}
+
+<!--<div class="box">-->
+<!--  <div class="box-col box-80">-->
+<!--     <h4>Customer Support</h4>-->
+<!--    <span class="function">Superman</span>-->
+<!--  </div>-->
+
+<!--  <div class="box-col box-20 text-right">-->
+<!--   <a class="button" href="/jobapplication">Apply</a>-->
+<!--  </div>-->
+<!--    </div>-->
+
+<!--
+      <p class='field required'>
+        <label class='label required' for='name'>Company</label>
+        <input class='text-input' id='name' name='name' required type='text' value='Name'>
+      </p>
+      <p class='field required half'>
+        <label class='label' for='email'>Job Title</label>
+        <input class='text-input' id='email' name='email' required type='email' value="Title">
+      </p>
+      <p class='field half'>
+        <label class='label' for='phone'>Location</label>
+        <input class='text-input' id='phone' name='phone' type='phone' value="Location">
+      </p>
+
+      <p class='field'>
+        <label class='label' for='about'>Job description</label>
+        <textarea class='textarea' cols='50' id='about' name='about' rows='4' placeholder="description......."></textarea>
+      </p>
+
+      <div class='field'>
+        <label class='label'>Skill</label>
+        <ul class='checkboxes'>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-0' name='choice' type='checkbox' value='0'>
+            <label class='checkbox-label' for='choice-0'>JAVA</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-1' name='choice' type='checkbox' value='1'>
+            <label class='checkbox-label' for='choice-1'>C</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-2' name='choice' type='checkbox' value='2'>
+            <label class='checkbox-label' for='choice-2'>Ruby on Rails</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-3' name='choice' type='checkbox' value='3'>
+            <label class='checkbox-label' for='choice-3'>SQL Server</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-4' name='choice' type='checkbox' value='4'>
+            <label class='checkbox-label' for='choice-4'>Oracle</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-5' name='choice' type='checkbox' value='5'>
+            <label class='checkbox-label' for='choice-5'>C++</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-6' name='choice' type='checkbox' value='6'>
+            <label class='checkbox-label' for='choice-6'>Virtualization</label>
+          </li>
+        <li class='checkbox'>
+          <input class='checkbox-input' id='choice-7' name='choice' type='checkbox' value='7'>
+          <label class='checkbox-label' for='choice-7'>Networking</label>
+        </li>
+       <li> <p class='field half'>
+          <input class='text-input' id='phone' name='phone' type='phone' placeholder="Add Skill" style="width: 40%;">
+        </p>
+        </li>
+      </ul>
+      </div>
+
+
+       <p class='field half'>
+        <label class='label' for='select'>Position</label>
+        <select class='select' id='select'>
+          <option selected value=''></option>
+          <option value='ceo'>CEO</option>
+          <option value='front-end'>Front-end developer</option>
+          <option value='back-end'>Back-end developer</option>
+        </select>
+      </p>
+      <p class='field half'>
+        <input class='button' type='submit' value='Send'>
+      </p>
+-->
+    </form>
+</div>
+
+  </body>
+
+
+{% endblock %}

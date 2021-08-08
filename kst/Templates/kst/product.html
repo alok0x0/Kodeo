@@ -1,0 +1,160 @@
+{% extends 'kst/base.html' %}
+
+{% block body %}
+{% load static %}
+
+<!-- ======= Main Section ======= -->
+   <section id="hero5" class="d-flex align-items-center">
+
+     <div class="container-fluid" data-aos="fade-up">
+       <div class="row justify-content-center">
+
+
+       </div>
+     </div>
+
+   </section><!-- End Main -->
+ <style>
+ 	.pdiv{
+ 		height: 300px;
+ 		width: 300px;
+
+ 	}
+ 	.mycard{
+ 		position: relative;
+ 	bottom: 850px;
+ 	width: 250px;
+ 	height: auto;
+ 	border-radius: 10px;}
+
+   .card-bg{
+     background: url({% static './assets/img/Images/download.png'%});
+     background-color: black;
+     margin-bottom: 70px;
+     border-radius: 10px;
+   }
+   .mx-5{
+     border-radius: 10px;
+   }
+ </style>
+
+</head>
+
+
+
+<div class="container">
+      <div class="row">
+          {% load static %}
+        <div class="col-md-6 mt-5 pdiv text-center " style="width: 50%; padding-top: 5vh;">
+          <h2>"{{prod.0.title}}"</h2>
+<!--            Freely Communicate______-->
+          <p>"{{prod.0.decs}}"
+          </p>
+<!--            Customer Support – improve  <br>-->
+<!--            customer satisfaction through better service.-->
+        </div>
+        <div class="col-md-6 pdiv " style="width: 50%">
+
+          <img src="/media/{{prod.0.image}}" width="100%">
+
+<!--            {% static './assets/img/Images/photo -1.png'%}-->
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 pdiv mx-auto " style="width: 50%;">
+          <img src="/media/{{prod.1.image}}" width="100%">
+<!--            {% static './assets/img/Images/photo-2.png'%}-->
+        </div>
+        <div class="col-md-6 mt-5 pdiv mx-auto  text-center " style="width: 50%; padding-top: 5vh; align-content: center;">
+          <h2>{{prod.1.title}}</h2>
+<!--            Gather Feedback______-->
+            <p>{{prod.1.decs}}</p>
+<!--          <p>Long form-based surveys. The most common way of collecting customer<br>-->
+<!--            feedback is survey forms with a set of questions that are usually sent in an email</p>-->
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 mt-5 pdiv text-center " style="width: 50%; align-content: center; padding-top: 10vh;">
+          <h2>{{prod.2.title}}</h2>
+<!--            Freely Communicate______-->
+            <p>{{prod.2.decs}}</p>
+<!--          <p>Customer Support – improve<br>-->
+<!--          customer satisfaction through better service.</p>-->
+        </div>
+        <div class="col-md-6 pdiv mx-auto " style="width: 50%;">
+          <img src="/media/{{prod.2.image}}" width="100%">
+<!--            {%static './assets/img/Images/photo-3.png'%}-->
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 pdiv mx-auto " style="width: 50%;">
+          <img src="/media/{{prod.3.image}}" width="100%">
+<!--            {% static './assets/img/Images/phto-4.png'%}-->
+        </div>
+        <div class="col-md-6 mt-5 pdiv text-center  " style="width: 50%; align-content: center; padding-top: 5vh;">
+<!--          <h2>Gather Feedback______</h2>-->
+            <h2>{{prod.3.title}}</h2>
+<!--          <p>Long form-based surveys. The most common way of collecting customer<br>-->
+<!--            feedback is survey forms with a set of questions that are usually sent in an email</p>-->
+            <p>{{prod.3.decs}}</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+      	<div class="col-md-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
+      		<br>
+      		<br>
+        <h1 class="my-5 text-center text-primary" style="padding-top: 30px; padding-bottom: 30px;"><b>OUR RECENT PROJECTS</b></h1>
+      	</div>
+
+
+
+       </div>
+       <br>
+
+       <div class="row card-bg"  >
+
+         <div class="row mx-auto" style="margin-top: -66px; margin-bottom: 66px;">
+             {% for i in recent %}
+             {% load static %}
+         	  <div class="col align-self-start shadow-lg p-3  bg-white mx-5  ">
+         	  	<figure>
+
+         	  		<img src="/media/{{i.image}}" class="img-fluid">
+<!--                        {% static './assets/img/Images/Project-1.png'%}-->
+         	  	</figure>
+
+
+    </div>
+             {% endfor %}
+<!--    <div class="col align-self-center shadow-lg p-3  bg-white mx-5  " >-->
+
+<!--    	<figure>-->
+<!--    		<img src="{% static './assets/img/Images/Project-2.png'%}" class="img-fluid">-->
+
+<!--    	</figure>-->
+
+<!--    </div>-->
+
+<!--    <div class="col align-self-end shadow-lg p-3  bg-white mx-5  " >-->
+
+<!--    	<figure>-->
+<!--    		<img src="{% static './assets/img/Images/project-3.png'%}" class="img-fluid">-->
+
+<!--    	</figure>-->
+
+
+<!--    </div>-->
+
+          </div>
+      </div>
+   </div>
+
+{% endblock %}

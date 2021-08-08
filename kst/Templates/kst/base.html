@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kodeo Software Technology</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+</head>
+<style>
+  @media (min-width:300px){
+    #res{
+     max-width:140%;
+    }
+
+  }
+</style>
+<body>
+
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- <h1 class="logo"><a href="index.html">Kodeo</a></h1> -->
+      <a href="index.html" class="logo"><img src="{%static 'assets/img/Images/Logo.jpg'%}" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/services">Services</a></li>
+          <li><a class="nav-link scrollto" href="/career">Career</a></li>
+              <li><a class="nav-link scrollto " href="/product">Product</a></li>
+          <li><a class="nav-link scrollto " href="about">About Us</a></li>
+              <li><a class="nav-link scrollto" href="/contactus">Contact</a></li>
+          <!-- <li><div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" placeholder="search......" class="form-control" />
+               </div>
+               <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit" style="margin-left: 10px;">Search</button>
+          </div>
+         </li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+
+{% block body %}  {% endblock %}
+<!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a href="index.html" class="logo"><img src="{% static 'assets/img/Images/Logo.jpg'%}" alt="" class="img-fluid" width="50%" style="border-radius: 8px;"></a>
+            <p>
+              We offer flexible & reliable websites and applications. We are the thought-leaders in the domain of professional IT services in implementing world-class infrastructure and technology.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About US</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/contactus">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/career">Career</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Our Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Website Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">App Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing / Project</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Android Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">IOS Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Creative Designs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Database Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber Security</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">IT Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Get in Tuch</h4>
+            <img src="{%static './assets/img/Images/Phone Icon.png'%}"><p><a href="7385053983">+917385053983</a> <a href="7620577807">+917620577807</a></p>
+            <img src="{% static './assets/img/Images/Massage Icon.png'%}"><p>info@kodeosoftwaretechnology.com  <a href="kodeosoftwaretechnology@gmail.com"> kodeosoftwaretechnology@gmail.com</a></p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+      <div class="copyright-wrap d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Kodeo Software technology</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by Kodeo Software Technology
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="https://lm.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2FKodeosoftwaretechnology&h=AT3nnvfNJRLiOBQT2SpdTIDYnojlXSK0F_ldTA2bnN87sdSSu8BP5siDHmo4cbG1zTWrdNku1hp_3CBb6zfuPH18BM0BT8DCNERpG_hUfWGEWH8siba1qjp0MV0cmPiHNG4WDw" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/kodeosoftwaretechnology/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://t.me/infokodeo"><i class="bi bi-telegram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+
+</body>
+
+</html>
+

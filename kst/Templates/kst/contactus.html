@@ -1,0 +1,109 @@
+{% extends 'kst/base.html' %}
+
+{% block body %}
+{% load static %}
+
+ <!-- ======= Main Section ======= -->
+  <section id="hero2" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <h1 style="color:white; margin-left: 80px;">Contact Us</h1>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Main -->
+	<div class="container">
+    <div class="row" style="margin-bottom: 40px; margin-top: 40px;">
+      <div class="col align-self-start mx-5">
+
+        <h1>OUR CONTACTS</h1>
+        <div>
+          <div>
+            <img src="{% static './assets/img/Images/Map-Icon.png'%}">
+            <h2>Our Address</h2>
+            <p>Ahamednagar Maharashtra</p>
+          </div>
+          <div>
+            <img src="{% static './assets/img/Images/Massage Icon.png'%}">
+            <h2>E-mail Address</h2>
+            <p>info@kodeosoftwaretechnology.com<br>
+             kodeosoftwaretechnology@gmail.com</p>
+          </div>
+
+          <div>
+            <img src="{% static './assets/img/Images/Phone Icon.png'%}">
+             <h2>Phone No</h2>
+             <p>+917385053983 <br> +919356840782.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col align-self-end mx-2">
+
+        <h1>REQUEST A QUOTE</h1>
+
+
+          <form action="" method="POST" accept-charset="utf-8" class="mx-auto mt-5">
+            {% csrf_token %}
+
+            <div class="row">
+              <div class="form- mb-3 col-md-6">
+                <label for="floatingInput">Full Name</label>
+    <input type="text" class="form-control forminput" placeholder="Name" name="name" required>
+
+  </div>
+
+  <div class="form- mb-3 col-md-6 ">
+    <label for="floatingInput">Email address</label>
+    <input type="email" class="form-control forminput" placeholder="Email" name="email" required>
+
+  </div>
+  </div>
+
+      <div class="row">
+
+        <div class="form- mb-3 col-md-6">
+          <label for="floatingInput">Contact Number</label>
+    <input type="text" class="form-control forminput" id="" placeholder="Contact" name="phone" required >
+
+  </div>
+
+  <div class="form- mb-3 col-md-6">
+    <label for="floatingPassword">Subject</label>
+    <input type="text" class="form-control forminput" placeholder="Subject" name="subject">
+
+  </div>
+
+      </div>
+  <br>
+
+  <div class="form-outline">
+    <label class="form-label" for="textAreaExample">Message</label>
+    <textarea class="form-control forminput"  rows="4" placeholder="Message" name="message"></textarea>
+
+  </div>
+
+
+  <div class="mt-3">
+
+    <button type="submit" name="submit" style="background-color: black;color: #ffffff; border: none; font-size: 18px; padding:10px;"><b>Send Message</b></button>
+
+  </div>
+          </form>
+      </div>
+    </div>
+  </div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    {% for message in messages %}
+    <script>
+      swal("{{message}}");
+
+    </script>
+    {% endfor %}
+
+{% endblock %}
