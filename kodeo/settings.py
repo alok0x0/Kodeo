@@ -53,6 +53,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'kodeo.urls'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
